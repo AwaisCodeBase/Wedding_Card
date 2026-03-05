@@ -238,6 +238,102 @@ export default function WeddingInvitation() {
           </div>
         </section>
 
+        {/* Premium Invitation Card Layout */}
+        <section className="py-16 px-4 bg-[#F5F5DC]">
+          <motion.div
+            initial={{ opacity: 0, y: 40 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8 }}
+            viewport={{ once: true }}
+            className="relative max-w-4xl mx-auto"
+          >
+            {/* Outer glow / frame */}
+            <div className="absolute inset-0 rounded-[40px] bg-gradient-to-br from-[#D4AF37]/20 via-transparent to-[#6E7A3D]/20 blur-xl pointer-events-none" />
+
+            {/* Main card */}
+            <div className="relative rounded-[32px] bg-[#FFFEF8] border border-[#E3D7BF] shadow-[0_24px_80px_rgba(0,0,0,0.15)] px-6 py-8 md:px-12 md:py-12 overflow-hidden">
+              {/* Corner ornaments */}
+              <div className="pointer-events-none">
+                <div className="absolute -top-3 -left-3 w-20 h-20 opacity-40 text-[#E3D7BF]">
+                  <svg viewBox="0 0 100 100" fill="currentColor">
+                    <path d="M0 100 Q40 60 80 0 H60 Q30 40 0 80Z" />
+                  </svg>
+                </div>
+                <div className="absolute -top-3 -right-3 w-20 h-20 opacity-40 text-[#E3D7BF] rotate-90">
+                  <svg viewBox="0 0 100 100" fill="currentColor">
+                    <path d="M0 100 Q40 60 80 0 H60 Q30 40 0 80Z" />
+                  </svg>
+                </div>
+                <div className="absolute -bottom-3 -left-3 w-20 h-20 opacity-40 text-[#E3D7BF] -rotate-90">
+                  <svg viewBox="0 0 100 100" fill="currentColor">
+                    <path d="M0 100 Q40 60 80 0 H60 Q30 40 0 80Z" />
+                  </svg>
+                </div>
+                <div className="absolute -bottom-3 -right-3 w-20 h-20 opacity-40 text-[#E3D7BF] rotate-180">
+                  <svg viewBox="0 0 100 100" fill="currentColor">
+                    <path d="M0 100 Q40 60 80 0 H60 Q30 40 0 80Z" />
+                  </svg>
+                </div>
+              </div>
+
+              <div className="text-center space-y-4 md:space-y-5 relative z-10">
+                <p className="font-serif text-xs md:text-sm tracking-[0.3em] uppercase text-[#B39A76]">
+                  In the name of Allah, the Most Merciful, the Most Kind
+                </p>
+
+                <div className="flex justify-center mt-2">
+                  <div className="flex items-center gap-3 text-[#D4AF37]">
+                    <div className="h-px w-10 bg-gradient-to-r from-transparent to-[#D4AF37]" />
+                    <span className="text-sm md:text-base font-serif italic">
+                      Wedding Card
+                    </span>
+                    <div className="h-px w-10 bg-gradient-to-l from-transparent to-[#D4AF37]" />
+                  </div>
+                </div>
+
+                <div className="mt-4 space-y-1">
+                  <p className="font-serif text-base md:text-lg text-[#4A5228]">
+                    Mr &amp; Mrs <span className="italic">Sh. Yaseen</span>
+                  </p>
+                  <p className="text-xs md:text-sm text-[#6E7A3D] tracking-wide">
+                    request the honour of your presence at the wedding of their son
+                  </p>
+                </div>
+
+                <h2 className="font-serif text-3xl md:text-4xl lg:text-5xl tracking-[0.18em] text-[#4A5228] uppercase mt-3">
+                  M Talha Yaseen
+                </h2>
+
+                <div className="mt-4 flex items-center justify-center gap-3">
+                  <div className="h-px w-10 md:w-16 bg-[#D4AF37]" />
+                  <span className="text-[11px] md:text-xs uppercase tracking-[0.35em] text-[#B39A76]">
+                    Wedding Celebrations
+                  </span>
+                  <div className="h-px w-10 md:w-16 bg-[#D4AF37]" />
+                </div>
+
+                {/* Date strip */}
+                <div className="mt-4 inline-flex flex-wrap items-center justify-center gap-3 bg-[#F5EEDF] rounded-full px-6 py-2 text-xs md:text-sm text-[#4A5228]">
+                  <span className="font-semibold">Rasm-e-Hina</span>
+                  <span className="text-[#B39A76]">23 March 2026</span>
+                  <span className="hidden sm:inline w-px h-4 bg-[#D4C4A8]" />
+                  <span className="font-semibold">Barat</span>
+                  <span className="text-[#B39A76]">24 March 2026</span>
+                  <span className="hidden sm:inline w-px h-4 bg-[#D4C4A8]" />
+                  <span className="font-semibold">Walima</span>
+                  <span className="text-[#B39A76]">25 March 2026</span>
+                </div>
+
+                {/* Address line */}
+                <div className="mt-6 space-y-1 text-xs md:text-sm text-[#6E7A3D] leading-relaxed">
+                  <p>House No. 8, W Block, Burewala · Qasr-e-Sadiq</p>
+                  <p>Looking forward to celebrating together with family and friends.</p>
+                </div>
+              </div>
+            </div>
+          </motion.div>
+        </section>
+
         {/* Countdown Section */}
         <section id="countdown" className="relative min-h-screen flex items-center justify-center py-20 overflow-hidden"
           style={{
@@ -357,7 +453,7 @@ export default function WeddingInvitation() {
                   Date:
                 </p>
                 <p className="text-[#6E7A3D] text-sm mb-3 text-center">
-                  24th March 2026
+                  25th March 2026
                 </p>
                 <div className="grid grid-cols-2 gap-3 text-sm text-[#4A5228] mb-4">
                   <div className="text-center">
