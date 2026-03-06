@@ -124,18 +124,24 @@ export default function WeddingInvitation() {
                 </svg>
               </div>
 
+              {/* Call-to-action under seal */}
+              <motion.p
+                initial={{ opacity: 0, y: 8 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ delay: 0.5, duration: 0.6 }}
+                className="mt-8 text-center font-serif font-semibold text-sm md:text-base tracking-wider text-[#4A3A25]"
+              >
+                Tap to open
+              </motion.p>
+
               {/* Bottom text (kept under seal, responsive) */}
               <motion.p
                 initial={{ opacity: 0, y: 12 }}
                 animate={{ opacity: 1, y: 0 }}
-                transition={{ delay: 0.6, duration: 0.7 }}
-                className="mt-10 mx-auto max-w-md text-[#8B7355] text-xs md:text-sm font-serif italic text-center px-6"
+                transition={{ delay: 0.8, duration: 0.7 }}
+                className="mt-4 mx-auto max-w-md text-[#8B7355] text-xs md:text-sm font-serif italic text-center px-6"
               >
                 This invitation is personal and non-transferable.
-                <br />
-                <span className="text-[11px] md:text-xs tracking-wide">
-                  Tap the seal to open the wedding card
-                </span>
               </motion.p>
             </div>
           </motion.div>
@@ -211,15 +217,6 @@ export default function WeddingInvitation() {
                 With the blessings and warmest wishes of all family members.
               </p>
             </motion.div>
-
-            <motion.p
-              initial={{ opacity: 0 }}
-              animate={{ opacity: 1 }}
-              transition={{ delay: 1.6, duration: 0.8 }}
-              className="text-[#6E7A3D] text-xl md:text-2xl mt-12 font-serif"
-            >
-              March 23 &amp; 24, 2026
-            </motion.p>
 
             <motion.button
               initial={{ opacity: 0, y: 20 }}
@@ -301,37 +298,81 @@ export default function WeddingInvitation() {
                 </div>
 
                 <h2 className="font-serif text-3xl md:text-4xl lg:text-5xl tracking-[0.18em] text-[#4A5228] uppercase mt-3">
-                  M Talha Yaseen
+                  <span className="block">M Talha Yaseen</span>
+                  <span className="block text-2xl md:text-3xl lg:text-4xl tracking-[0.25em] text-[#B39A76] mt-1">
+                    Weds Adan Riaz
+                  </span>
                 </h2>
 
-                <div className="mt-4 flex items-center justify-center gap-3">
-                  <div className="h-px w-10 md:w-16 bg-[#D4AF37]" />
-                  <span className="text-[11px] md:text-xs uppercase tracking-[0.35em] text-[#B39A76]">
-                    Wedding Celebrations
-                  </span>
-                  <div className="h-px w-10 md:w-16 bg-[#D4AF37]" />
-                </div>
-
-                {/* Date strip */}
-                <div className="mt-4 inline-flex flex-wrap items-center justify-center gap-3 bg-[#F5EEDF] rounded-full px-6 py-2 text-xs md:text-sm text-[#4A5228]">
-                  <span className="font-semibold">Rasm-e-Hina</span>
-                  <span className="text-[#B39A76]">23 March 2026</span>
-                  <span className="hidden sm:inline w-px h-4 bg-[#D4C4A8]" />
-                  <span className="font-semibold">Barat</span>
-                  <span className="text-[#B39A76]">24 March 2026</span>
-                  <span className="hidden sm:inline w-px h-4 bg-[#D4C4A8]" />
-                  <span className="font-semibold">Walima</span>
-                  <span className="text-[#B39A76]">25 March 2026</span>
-                </div>
-
-                {/* Address line */}
+                {/* Residence */}
                 <div className="mt-6 space-y-1 text-xs md:text-sm text-[#6E7A3D] leading-relaxed">
-                  <p>House No. 8, W Block, Burewala · Qasr-e-Sadiq</p>
+                  <p className="font-semibold uppercase tracking-[0.3em] text-[#4A5228]">
+                    Residence
+                  </p>
+                  <p>House No. 8, W Block, Burewala</p>
                   <p>Looking forward to celebrating together with family and friends.</p>
                 </div>
               </div>
             </div>
           </motion.div>
+        </section>
+
+        {/* RSVP & Contact Section (placed directly after wedding card) */}
+        <section id="rsvp" className="py-20 px-4 bg-[#FFFEF0]">
+          <div className="max-w-4xl mx-auto">
+            <div className="text-center mb-12">
+              <h2 className="font-serif text-4xl md:text-5xl text-[#4A5228] mb-4 italic">
+                Looking Forward
+              </h2>
+              <p className="text-[#6E7A3D] text-lg">
+                Your presence will add joy to our celebrations
+              </p>
+            </div>
+
+            <motion.div
+              initial={{ opacity: 0, y: 30 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.8 }}
+              viewport={{ once: true }}
+              className="bg-white rounded-3xl shadow-2xl p-8 md:p-10 border border-[#E3D7BF]"
+            >
+              <div className="grid gap-8 md:grid-cols-[2fr,1fr] items-start">
+                <div className="space-y-4">
+                  <div className="grid sm:grid-cols-2 gap-4 text-sm text-[#4A5228]">
+                    <div>
+                      <p className="font-semibold">Sh. M Ahmad</p>
+                      <p className="text-[#6E7A3D]">0321-6913251</p>
+                    </div>
+                    <div>
+                      <p className="font-semibold">M. Hamza Yaseen</p>
+                      <p className="text-[#6E7A3D]">0315-6124268</p>
+                    </div>
+                  </div>
+                  <p className="font-serif text-lg text-[#4A5228]">
+                    R.S.V.P &amp; Best Compliments From
+                  </p>
+                  <p className="text-[#6E7A3D] leading-relaxed">
+                    Mr &amp; Mrs Sh. Yaseen &amp; all family members
+                  </p>
+                  <div className="pt-2 text-sm text-[#6E7A3D]">
+                    <p>
+                      <span className="font-semibold text-[#4A5228]">Contact:</span>{" "}
+                      0321-6991651, 0309-0210551
+                    </p>
+                  </div>
+                </div>
+                <div className="border-l border-dashed border-[#E3D7BF] pl-6 hidden md:block">
+                  <p className="font-serif text-sm text-[#4A5228] mb-2 italic">
+                    Kindly respond at your earliest convenience.
+                  </p>
+                  <p className="text-xs text-[#6E7A3D] leading-relaxed">
+                    Your prayers, love and blessings are the most precious gifts for
+                    Talha and the entire family.
+                  </p>
+                </div>
+              </div>
+            </motion.div>
+          </div>
         </section>
 
         {/* Countdown Section */}
@@ -415,7 +456,7 @@ export default function WeddingInvitation() {
                   Programme:
                 </p>
                 <p className="text-[#6E7A3D] text-sm mb-3 text-center">
-                  23rd March 2026
+                  23rd March 2026 · 7:00 PM
                 </p>
                 <p className="text-[#4A5228] text-sm font-semibold mb-1 text-center">
                   Venue:
@@ -453,7 +494,7 @@ export default function WeddingInvitation() {
                   Date:
                 </p>
                 <p className="text-[#6E7A3D] text-sm mb-3 text-center">
-                  25th March 2026
+                  24th March 2026
                 </p>
                 <div className="grid grid-cols-2 gap-3 text-sm text-[#4A5228] mb-4">
                   <div className="text-center">
@@ -493,7 +534,7 @@ export default function WeddingInvitation() {
                   Date:
                 </p>
                 <p className="text-[#6E7A3D] text-sm mb-3 text-center">
-                  24th March 2026
+                  25th March 2026
                 </p>
                 <p className="text-[#4A5228] text-sm font-semibold mb-1 text-center">
                   Dinner:
@@ -509,73 +550,6 @@ export default function WeddingInvitation() {
                 </p>
               </motion.div>
             </div>
-          </div>
-        </section>
-
-        {/* Decorative Divider */}
-        <div className="py-8 bg-[#F5F5DC]">
-          <div className="flex items-center justify-center gap-4">
-            <div className="h-px w-24 bg-[#D4AF37]"/>
-            <div className="w-2 h-2 rotate-45 bg-[#D4AF37]"/>
-            <div className="h-px w-24 bg-[#D4AF37]"/>
-          </div>
-        </div>
-
-        {/* RSVP & Contact Section */}
-        <section id="rsvp" className="py-20 px-4 bg-[#FFFEF0]">
-          <div className="max-w-4xl mx-auto">
-            <div className="text-center mb-12">
-              <h2 className="font-serif text-4xl md:text-5xl text-[#4A5228] mb-4 italic">
-                Looking Forward
-              </h2>
-              <p className="text-[#6E7A3D] text-lg">
-                Your presence will add joy to our celebrations
-              </p>
-            </div>
-
-            <motion.div
-              initial={{ opacity: 0, y: 30 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.8 }}
-              viewport={{ once: true }}
-              className="bg-white rounded-3xl shadow-2xl p-8 md:p-10 border border-[#E3D7BF]"
-            >
-              <div className="grid gap-8 md:grid-cols-[2fr,1fr] items-start">
-                <div className="space-y-4">
-                  <p className="font-serif text-lg text-[#4A5228]">
-                    R.S.V.P &amp; Best Compliments From
-                  </p>
-                  <p className="text-[#6E7A3D] leading-relaxed">
-                    Mr &amp; Mrs Sh. Yaseen &amp; all family members
-                  </p>
-                  <div className="grid sm:grid-cols-2 gap-4 text-sm text-[#4A5228]">
-                    <div>
-                      <p className="font-semibold">Sh. M Ahmad</p>
-                      <p className="text-[#6E7A3D]">0321-6913251</p>
-                    </div>
-                    <div>
-                      <p className="font-semibold">M. Hamza Yaseen</p>
-                      <p className="text-[#6E7A3D]">0315-6124268</p>
-                    </div>
-                  </div>
-                  <div className="pt-2 text-sm text-[#6E7A3D]">
-                    <p>
-                      <span className="font-semibold text-[#4A5228]">Contact:</span>{" "}
-                      0321-6991651
-                    </p>
-                  </div>
-                </div>
-                <div className="border-l border-dashed border-[#E3D7BF] pl-6 hidden md:block">
-                  <p className="font-serif text-sm text-[#4A5228] mb-2 italic">
-                    Kindly respond at your earliest convenience.
-                  </p>
-                  <p className="text-xs text-[#6E7A3D] leading-relaxed">
-                    Your prayers, love and blessings are the most precious gifts for
-                    Talha and the entire family.
-                  </p>
-                </div>
-              </div>
-            </motion.div>
           </div>
         </section>
 
