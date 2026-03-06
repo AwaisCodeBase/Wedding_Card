@@ -89,7 +89,7 @@ export default function WeddingInvitation() {
                         letterSpacing: "2px"
                       }}
                     >
-                      TY
+                      T ❤️ A
                     </span>
                   </div>
                   
@@ -297,12 +297,12 @@ export default function WeddingInvitation() {
                   </p>
                 </div>
 
-                <h2 className="font-serif text-3xl md:text-4xl lg:text-5xl tracking-[0.18em] text-[#4A5228] uppercase mt-3">
-                  <span className="block">M Talha Yaseen</span>
-                  <span className="block text-xl md:text-2xl tracking-[0.35em] text-[#B39A76] mt-1">
+                <h2 className="font-serif text-3xl md:text-4xl lg:text-5xl tracking-[0.18em] uppercase mt-3">
+                  <span className="block text-[#C19A6B]">M Talha Yaseen</span>
+                  <span className="block text-xl md:text-2xl tracking-[0.35em] text-[#D4AF37] mt-1">
                     weds
                   </span>
-                  <span className="block">Adan Riaz</span>
+                  <span className="block text-[#C19A6B]">Adan Riaz</span>
                 </h2>
 
                 {/* Residence */}
@@ -353,7 +353,7 @@ export default function WeddingInvitation() {
                     R.S.V.P &amp; Best Compliments From
                   </p>
                   <p className="text-[#6E7A3D] leading-relaxed">
-                    Mr &amp; Mrs Sh. Yaseen &amp; all family members
+                    Mr &amp; Mrs Sh. Yaseen &amp; all family members &amp; all relatives
                   </p>
                   <div className="pt-2 text-sm text-[#6E7A3D]">
                     <p>
