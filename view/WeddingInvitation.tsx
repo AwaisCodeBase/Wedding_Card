@@ -82,14 +82,16 @@ export default function WeddingInvitation() {
                   
                   {/* Monogram */}
                   <div className="absolute inset-0 flex items-center justify-center">
-                    <span className="font-serif text-5xl md:text-7xl text-[#A89678] italic" 
+                    <span
+                      className="font-serif text-5xl md:text-7xl text-[#A89678] italic"
                       style={{
-                        textShadow: "2px 2px 4px rgba(0,0,0,0.2), -1px -1px 2px rgba(255,255,255,0.5)",
+                        textShadow:
+                          "2px 2px 4px rgba(0,0,0,0.2), -1px -1px 2px rgba(255,255,255,0.5)",
                         fontWeight: 300,
-                        letterSpacing: "2px"
+                        letterSpacing: "2px",
                       }}
                     >
-                      T ❤️ A
+                      T ♥ A
                     </span>
                   </div>
                   
