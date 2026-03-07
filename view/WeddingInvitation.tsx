@@ -499,7 +499,7 @@ export default function WeddingInvitation() {
                 <p className="text-[#6E7A3D] text-sm mb-3 text-center">
                   24th March 2026
                 </p>
-                <div className="grid grid-cols-2 gap-3 text-sm text-[#4A5228] mb-4">
+                <div className="grid grid-cols-3 gap-3 text-sm text-[#4A5228] mb-4">
                   <div className="text-center">
                     <p className="font-semibold">Sehra Bandi</p>
                     <p className="text-[#6E7A3D]">6:00 PM</p>
@@ -507,6 +507,10 @@ export default function WeddingInvitation() {
                   <div className="text-center">
                     <p className="font-semibold">Departure</p>
                     <p className="text-[#6E7A3D]">7:00 PM</p>
+                  </div>
+                  <div className="text-center">
+                    <p className="font-semibold">Venue</p>
+                    <p className="text-[#6E7A3D]">Nawab Marque, Vehari</p>
                   </div>
                 </div>
                 <p className="text-[#4A5228] text-sm font-semibold mb-1 text-center">
@@ -562,7 +566,7 @@ export default function WeddingInvitation() {
           <p className="text-lg font-serif italic mb-2">
             M Talha Yaseen
           </p>
-          <p className="text-sm opacity-70">Rasm-e-Hina, Barat &amp; Walima — March 23 &amp; 24, 2026</p>
+          <p className="text-sm opacity-70">Rasm-e-Hina, Barat &amp; Walima — March 23, 24 &amp; 25, 2026</p>
           <div className="mt-6 flex items-center justify-center gap-4">
             <div className="h-px w-16 bg-white/30"/>
             <div className="w-2 h-2 rotate-45 bg-white/50"/>
