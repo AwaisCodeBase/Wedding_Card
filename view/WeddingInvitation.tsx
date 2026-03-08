@@ -344,7 +344,7 @@ export default function WeddingInvitation() {
                   <div className="grid sm:grid-cols-2 gap-4 text-sm text-[#4A5228]">
                     <div>
                       <p className="font-semibold">Sh. M Ahmad</p>
-                      <p className="text-[#6E7A3D]">0321-6913251</p>
+                      <p className="text-[#6E7A3D]">0321-6993251</p>
                     </div>
                     <div>
                       <p className="font-semibold">M. Hamza Yaseen</p>
@@ -465,7 +465,7 @@ export default function WeddingInvitation() {
                   Venue:
                 </p>
                 <p className="text-[#6E7A3D] text-sm mb-4 text-center">
-                  Qasr-e-Sadiq
+                  Qasr-e-Sadiq, Luddan Road, Burewala
                 </p>
                 <div className="mt-4 pt-4 border-t border-dashed border-[#E3D7BF] text-center">
                   <p className="font-serif text-sm text-[#4A5228] mb-1 italic">
@@ -553,7 +553,7 @@ export default function WeddingInvitation() {
                   Venue:
                 </p>
                 <p className="text-[#6E7A3D] text-sm text-center">
-                  Qasr-e-Sadiq
+                  Qasr-e-Sadiq, Luddan Road, Burewala
                 </p>
               </motion.div>
             </div>
